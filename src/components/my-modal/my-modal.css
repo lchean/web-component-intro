@@ -1,0 +1,56 @@
+:host {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+:host(:not(.is-visible)) {
+  display: none;
+}
+
+:host(.v-top) {
+  align-items: flex-start;
+}
+
+:host(.v-bottom) {
+  align-items: flex-end;
+}
+
+:host(.v-center) {
+  align-items: center;
+}
+
+:host(.h-right) {
+  justify-content: flex-end;
+}
+
+:host(.h-left) {
+  justify-content: flex-start;
+}
+
+:host(.h-center) {
+  justify-content: center;
+}
+
+:host(.has-overlay) {
+  background-color: rgba(50, 50, 50, .2);
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 4px;
+  border: solid 1px #eaeaea;
+  background-color: #fff;
+}   
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

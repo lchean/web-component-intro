@@ -1,0 +1,17 @@
+:host { 
+  display: inline-block;
+}
+
+:host(.rounded) button {
+  border-radius: 50%;
+}
+
+button {
+  display: block;
+  padding: 8px 12px;
+  border: 0;
+  background: #000;
+  color: #fff;
+  appearance: none;
+  cursor: pointer;
+}

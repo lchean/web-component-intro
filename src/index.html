@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-introduction.esm.js"></script>
+    <script nomodule src="/build/stencil-introduction.js"></script>
+  
+    <style>
+      body {
+        height: 100vh;
+      } 
+
+      .my-button {
+        position: relative;
+        z-index: 10;
+      }
+
+      .modal-content {
+        border: solid 1px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <my-button class="my-button">Toggle Modal</my-button> -->
+
+    <my-modal has-overlay is-visible>
+      <div class="modal-content">
+        Modal Content
+      </div>
+    </my-modal>
+<!-- 
+    <script>
+      const event = new Event('modalToggled');
+
+      document.querySelector('.my-button').addEventListener('click', () => {
+        document.dispatchEvent(event);
+      });
+    </script> -->
+  </body>
+</html>
